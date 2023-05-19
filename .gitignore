@@ -17,7 +17,7 @@ xcuserdata/
 DerivedData
 *.hmap
 *.ipa
-
+j2objc_lib/lib/
 # Bundler
 .bundle
 

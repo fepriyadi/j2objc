@@ -21,6 +21,7 @@ Pod::Spec.new do |s|
   
     s.ios.deployment_target = '9.0'
     s.requires_arc = false
+    s.static_framework = true
 
     # s.prepare_command = <<-CMD
     #     scripts/download.sh
@@ -38,7 +39,7 @@ Pod::Spec.new do |s|
     s.xcconfig = {
         'HEADER_SEARCH_PATHS' => '"${PODS_ROOT}/j2objc_lib/include"'
     }
-    s.pod_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
-    s.user_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
+    # s.pod_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
+    # s.user_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
   
   end
